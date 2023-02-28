@@ -1,0 +1,12 @@
+.\objects\led.o: User\led.c
+.\objects\led.o: User\led.h
+.\objects\led.o: .\Peripheral\gpio.h
+.\objects\led.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: .\Core\core_cm3.h
+.\objects\led.o: .\Core\CortexM3.h
+.\objects\led.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: .\Core\core_cm3.h
+.\objects\led.o: .\Core\CortexM3.h
+.\objects\led.o: .\Core\core_cmInstr.h
+.\objects\led.o: .\Core\core_cmFunc.h

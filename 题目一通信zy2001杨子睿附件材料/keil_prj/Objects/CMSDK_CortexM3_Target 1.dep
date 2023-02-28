@@ -1,0 +1,109 @@
+Dependencies for Project 'CMSDK_CortexM3', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Core\core_cm3.h)(0x63F41D97)()
+F (.\Core\core_cmFunc.h)(0x63E88F7C)()
+F (.\Core\core_cmInstr.h)(0x63E88F7C)()
+F (.\Core\CortexM3.h)(0x63FB36C2)()
+F (.\Core\handler.c)(0x63FD4B5A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\handler.o --omf_browse .\objects\handler.crf --depend .\objects\handler.d)
+I (Core\CortexM3.h)(0x63FB36C2)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (Core\core_cm3.h)(0x63F41D97)
+I (Core\core_cmInstr.h)(0x63E88F7C)
+I (Core\core_cmFunc.h)(0x63E88F7C)
+I (Core\system.h)(0x63F6D676)
+I (.\Peripheral\uart.h)(0x63F44105)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+I (.\User\led.h)(0x63FC9467)
+I (.\User\key.h)(0x63FD4B2C)
+F (.\Core\main.c)(0x63FDB29D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (Core\CortexM3.h)(0x63FB36C2)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (Core\core_cm3.h)(0x63F41D97)
+I (Core\core_cmInstr.h)(0x63E88F7C)
+I (Core\core_cmFunc.h)(0x63E88F7C)
+I (Core\system.h)(0x63F6D676)
+I (.\Peripheral\uart.h)(0x63F44105)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+I (.\Peripheral\spi_gpio.h)(0x63F6D64F)
+I (.\User\led.h)(0x63FC9467)
+I (.\User\key.h)(0x63FD4B2C)
+F (.\Core\Retarget.c)(0x63F44093)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (Core\CortexM3.h)(0x63FB36C2)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (Core\core_cm3.h)(0x63F41D97)
+I (Core\core_cmInstr.h)(0x63E88F7C)
+I (Core\core_cmFunc.h)(0x63E88F7C)
+I (Core\system.h)(0x63F6D676)
+I (.\Peripheral\uart.h)(0x63F44105)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+F (.\Core\startup_CM3DS.s)(0x63FB458E)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "CMSDK_CM3 SETA 1"--list .\listings\startup_cm3ds.lst --xref -o .\objects\startup_cm3ds.o --depend .\objects\startup_cm3ds.d)
+F (.\Core\system.c)(0x63FC9B2A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\system.o --omf_browse .\objects\system.crf --depend .\objects\system.d)
+I (Core\CortexM3.h)(0x63FB36C2)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (Core\core_cm3.h)(0x63F41D97)
+I (Core\core_cmInstr.h)(0x63E88F7C)
+I (Core\core_cmFunc.h)(0x63E88F7C)
+I (Core\system.h)(0x63F6D676)
+I (.\Peripheral\uart.h)(0x63F44105)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+I (D:\Learn\MDK\ARM\ARMCC\include\string.h)(0x6025237E)
+F (.\Core\system.h)(0x63F6D676)()
+F (.\Peripheral\gpio.h)(0x63FB3D83)()
+F (.\Peripheral\gpio.c)(0x63FB3E1A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (Peripheral\gpio.h)(0x63FB3D83)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Core\CortexM3.h)(0x63FB36C2)
+I (.\Core\core_cmInstr.h)(0x63E88F7C)
+I (.\Core\core_cmFunc.h)(0x63E88F7C)
+F (.\Peripheral\uart.c)(0x63F41F55)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (Peripheral\uart.h)(0x63F44105)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Core\CortexM3.h)(0x63FB36C2)
+I (.\Core\core_cmInstr.h)(0x63E88F7C)
+I (.\Core\core_cmFunc.h)(0x63E88F7C)
+F (.\Peripheral\uart.h)(0x63F44105)()
+F (.\Peripheral\spi_gpio.h)(0x63F6D64F)()
+F (.\Peripheral\spi_gpio.c)(0x63FDB1AD)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\spi_gpio.o --omf_browse .\objects\spi_gpio.crf --depend .\objects\spi_gpio.d)
+I (Peripheral\spi_gpio.h)(0x63F6D64F)
+I (Peripheral\gpio.h)(0x63FB3D83)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Core\CortexM3.h)(0x63FB36C2)
+I (.\Core\core_cmInstr.h)(0x63E88F7C)
+I (.\Core\core_cmFunc.h)(0x63E88F7C)
+I (.\Core\system.h)(0x63F6D676)
+I (.\Peripheral\uart.h)(0x63F44105)
+F (.\User\led.h)(0x63FC9467)()
+F (.\User\key.h)(0x63FD4B2C)()
+F (.\User\key.c)(0x63FD4B9C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
+I (User\key.h)(0x63FD4B2C)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (.\Core\system.h)(0x63F6D676)
+I (.\Core\CortexM3.h)(0x63FB36C2)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Core\core_cmInstr.h)(0x63E88F7C)
+I (.\Core\core_cmFunc.h)(0x63E88F7C)
+I (.\Peripheral\uart.h)(0x63F44105)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+F (.\User\led.c)(0x63FC2C1C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Core -I.\Peripheral -I.\User-I C:\Users\forest\Desktop\VIVADO_Prj\CMSDK_CortexM3_1\keil_prj\RTE-I D:\Learn\MDK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM3\Include-I D:\Learn\MDK\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DCMSDK_CM3-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (User\led.h)(0x63FC9467)
+I (.\Peripheral\gpio.h)(0x63FB3D83)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdint.h)(0x624D4316)
+I (D:\Learn\MDK\ARM\ARMCC\include\stdio.h)(0x63F0C075)
+I (.\Core\core_cm3.h)(0x63F41D97)
+I (.\Core\CortexM3.h)(0x63FB36C2)
+I (.\Core\core_cmInstr.h)(0x63E88F7C)
+I (.\Core\core_cmFunc.h)(0x63E88F7C)

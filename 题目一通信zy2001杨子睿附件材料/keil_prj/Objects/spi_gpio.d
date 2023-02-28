@@ -1,0 +1,16 @@
+.\objects\spi_gpio.o: Peripheral\spi_gpio.c
+.\objects\spi_gpio.o: Peripheral\spi_gpio.h
+.\objects\spi_gpio.o: Peripheral\gpio.h
+.\objects\spi_gpio.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\spi_gpio.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\spi_gpio.o: .\Core\core_cm3.h
+.\objects\spi_gpio.o: .\Core\CortexM3.h
+.\objects\spi_gpio.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\spi_gpio.o: .\Core\core_cm3.h
+.\objects\spi_gpio.o: .\Core\CortexM3.h
+.\objects\spi_gpio.o: .\Core\core_cmInstr.h
+.\objects\spi_gpio.o: .\Core\core_cmFunc.h
+.\objects\spi_gpio.o: .\Core\system.h
+.\objects\spi_gpio.o: .\Peripheral\uart.h
+.\objects\spi_gpio.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\spi_gpio.o: .\Core\core_cm3.h

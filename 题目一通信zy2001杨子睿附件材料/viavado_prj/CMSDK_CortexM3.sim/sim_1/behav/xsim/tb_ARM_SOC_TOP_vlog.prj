@@ -1,0 +1,47 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../../rtl/ARM_SOC_TOP.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v" \
+"../../../../../rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v" \
+"../../../../../rtl/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v" \
+"../../../../../rtl/peripheral/GPIO/cmsdk_ahb_gpio.v" \
+"../../../../../rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v" \
+"../../../../../rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v" \
+"../../../../../rtl/bus/sys_apb/cmsdk_ahb_to_apb.v" \
+"../../../../../rtl/peripheral/GPIO/cmsdk_ahb_to_iop.v" \
+"../../../../../rtl/peripheral/cmsdk_ahb_to_sram.v" \
+"../../../../../rtl/bus/sys_apb/cmsdk_apb_slave_mux.v" \
+"../../../../../rtl/peripheral/cmsdk_apb_uart.v" \
+"../../../../../rtl/peripheral/cmsdk_fpga_sram.v" \
+"../../../../../rtl/peripheral/GPIO/cmsdk_iop_gpio.v" \
+"../../../../../rtl/core/cortexm3ds_logic.v" \
+"../../../../../rtl/swdio_tri_buf.v" \
+"../../../../../rtl/tb_ARM_SOC_TOP.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

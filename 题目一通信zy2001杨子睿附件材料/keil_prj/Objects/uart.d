@@ -1,0 +1,11 @@
+.\objects\uart.o: Peripheral\uart.c
+.\objects\uart.o: Peripheral\uart.h
+.\objects\uart.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart.o: .\Core\core_cm3.h
+.\objects\uart.o: .\Core\CortexM3.h
+.\objects\uart.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart.o: .\Core\core_cm3.h
+.\objects\uart.o: .\Core\CortexM3.h
+.\objects\uart.o: .\Core\core_cmInstr.h
+.\objects\uart.o: .\Core\core_cmFunc.h

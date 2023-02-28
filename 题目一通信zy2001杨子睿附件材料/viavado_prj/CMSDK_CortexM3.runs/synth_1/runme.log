@@ -1,0 +1,801 @@
+
+*** Running vivado
+    with args -log ARM_SOC_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ARM_SOC_TOP.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source ARM_SOC_TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 414.289 ; gain = 72.543
+Command: read_checkpoint -auto_incremental -incremental C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/utils_1/imports/synth_1/tb_ARM_SOC_TOP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/utils_1/imports/synth_1/tb_ARM_SOC_TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ARM_SOC_TOP -part xa7z020clg400-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9876
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Learn/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-10940] macro 'TRN_IDLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:113]
+WARNING: [Synth 8-10940] macro 'TRN_BUSY' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:114]
+WARNING: [Synth 8-10940] macro 'TRN_NONSEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:115]
+WARNING: [Synth 8-10940] macro 'TRN_SEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:116]
+WARNING: [Synth 8-10940] macro 'BUR_SINGLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:119]
+WARNING: [Synth 8-10940] macro 'BUR_INCR' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:120]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:121]
+WARNING: [Synth 8-10940] macro 'BUR_INCR4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:122]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:123]
+WARNING: [Synth 8-10940] macro 'BUR_INCR8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:124]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:125]
+WARNING: [Synth 8-10940] macro 'BUR_INCR16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:126]
+WARNING: [Synth 8-10940] macro 'TRN_IDLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:78]
+WARNING: [Synth 8-10940] macro 'TRN_BUSY' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:79]
+WARNING: [Synth 8-10940] macro 'TRN_NONSEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:80]
+WARNING: [Synth 8-10940] macro 'TRN_SEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:81]
+WARNING: [Synth 8-10940] macro 'BUR_SINGLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:84]
+WARNING: [Synth 8-10940] macro 'BUR_INCR' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:85]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:86]
+WARNING: [Synth 8-10940] macro 'BUR_INCR4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:87]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:88]
+WARNING: [Synth 8-10940] macro 'BUR_INCR8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:89]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:90]
+WARNING: [Synth 8-10940] macro 'BUR_INCR16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:91]
+WARNING: [Synth 8-10940] macro 'TRN_IDLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:113]
+WARNING: [Synth 8-10940] macro 'TRN_BUSY' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:114]
+WARNING: [Synth 8-10940] macro 'TRN_NONSEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:115]
+WARNING: [Synth 8-10940] macro 'TRN_SEQ' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:116]
+WARNING: [Synth 8-10940] macro 'BUR_SINGLE' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:119]
+WARNING: [Synth 8-10940] macro 'BUR_INCR' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:120]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:121]
+WARNING: [Synth 8-10940] macro 'BUR_INCR4' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:122]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:123]
+WARNING: [Synth 8-10940] macro 'BUR_INCR8' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:124]
+WARNING: [Synth 8-10940] macro 'BUR_WRAP16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:125]
+WARNING: [Synth 8-10940] macro 'BUR_INCR16' is redefined [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:126]
+INFO: [Synth 8-11241] undeclared symbol 'clk', assumed default net type 'wire' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:22]
+INFO: [Synth 8-11241] undeclared symbol 'HADDRI', assumed default net type 'wire' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:26]
+INFO: [Synth 8-11241] undeclared symbol 'HRDATAI', assumed default net type 'wire' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:27]
+WARNING: [Synth 8-8895] 'clk' is already implicitly declared on line 22 [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:34]
+WARNING: [Synth 8-8895] 'HADDRI' is already implicitly declared on line 26 [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:120]
+WARNING: [Synth 8-8895] 'HRDATAI' is already implicitly declared on line 27 [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:125]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1325.520 ; gain = 450.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ARM_SOC_TOP' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Learn/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/Learn/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:1082]
+INFO: [Synth 8-6157] synthesizing module 'swdio_tri_buf' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_2/rtl/swdio_tri_buf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Learn/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/Learn/Vivado/Vivado/2022.2/scripts/rt/data/unisim_comp.v:75902]
+INFO: [Synth 8-6155] done synthesizing module 'swdio_tri_buf' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_2/rtl/swdio_tri_buf.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.runs/synth_1/.Xil/Vivado-4220-LAPTOP-3N54D6K6/realtime/ila_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.runs/synth_1/.Xil/Vivado-4220-LAPTOP-3N54D6K6/realtime/ila_1_stub.v:5]
+WARNING: [Synth 8-689] width (32) of port connection 'probe2' does not match port width (16) of module 'ila_1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:26]
+WARNING: [Synth 8-689] width (32) of port connection 'probe3' does not match port width (16) of module 'ila_1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:27]
+INFO: [Synth 8-6157] synthesizing module 'cortexm3ds_logic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/core/cortexm3ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm3ds_logic' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/core/cortexm3ds_logic.v:27]
+WARNING: [Synth 8-7071] port 'TDO' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'nTDOEN' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'SWV' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'JTAGNSW' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'TRACECLK' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'TRACEDATA' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'MEMATTRI' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'MEMATTRD' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'EXREQD' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'MEMATTRS' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'EXREQS' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'BRCHSTAT' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HALTED' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'LOCKUP' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'SLEEPDEEP' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'ETMINTNUM' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'ETMINTSTAT' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'TXEV' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'TRCENA' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'CURRPRI' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'DBGRESTARTED' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'SLEEPHOLDACKn' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'GATEHCLK' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHADDR' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHTRANS' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHSIZE' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHBURST' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHPROT' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHWDATA' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHWRITE' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHRDATA' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHREADY' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'HTMDHRESP' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'WICENACK' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'WAKEUP' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r0_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r1_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r2_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r3_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r4_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r5_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r6_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r7_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r8_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r9_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r10_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r11_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_r12_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_msp_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_psp_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7071] port 'vis_pc_o' of module 'cortexm3ds_logic' is unconnected for instance 'ulogic' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+WARNING: [Synth 8-7023] instance 'ulogic' of module 'cortexm3ds_logic' has 122 connections declared, but only 71 given [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v:49]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxInStg' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:405]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:421]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxInStg' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxInStg.v:32]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxDecS0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtx_default_slave' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtx_default_slave' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxDecS0' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxDecS1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxDecS1' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS1.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxDecS2' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxDecS2' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS2.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxDecS3' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxDecS3' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS3.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxDecS4' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxDecS4' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxDecS4.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxOutStgM0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxArbM0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v:167]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxArbM0' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM0.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxOutStgM0' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM0.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxOutStgM1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxArbM1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v:170]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxArbM1' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM1.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxOutStgM1' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxOutStgM2' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v:38]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxArbM2' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxArbM2' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxOutStgM2' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM2.v:38]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxOutStgM3' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxArbM3' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v:170]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxArbM3' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM3.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxOutStgM3' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM3.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxOutStgM4' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L1AhbMtxArbM4' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v:170]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxArbM4' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxArbM4.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtxOutStgM4' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtxOutStgM4.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L1AhbMtx' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v:49]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM0' does not match port width (4) of module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:497]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM1' does not match port width (4) of module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:513]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM2' does not match port width (4) of module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:529]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM3' does not match port width (4) of module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:545]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM4' does not match port width (4) of module 'L1AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:561]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_ahb_sync' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v:30]
+	Parameter AW bound to: 32 - type: integer 
+	Parameter DW bound to: 32 - type: integer 
+	Parameter MW bound to: 2 - type: integer 
+	Parameter BURST bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_ahb_sync_error_canc' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v:31]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_ahb_sync_error_canc' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync_error_canc.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_ahb_sync' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/cmsdk_ahb_to_ahb_sync.v:30]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v:45]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbInStg' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:405]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:421]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbInStg' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbInStg.v:32]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbDecS0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbMtx_default_slave' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbMtx_default_slave' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx_default_slave.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbDecS0' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbDecS0.v:36]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbOutStg' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v:35]
+INFO: [Synth 8-6157] synthesizing module 'L2AhbArb' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:166]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:169]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbArb' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbArb.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbOutStg' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'L2AhbMtx' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v:45]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM0' does not match port width (4) of module 'L2AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:689]
+WARNING: [Synth 8-689] width (2) of port connection 'HMASTERM1' does not match port width (4) of module 'L2AhbMtx' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:704]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_apb' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_apb/cmsdk_ahb_to_apb.v:31]
+	Parameter ADDRWIDTH bound to: 16 - type: integer 
+	Parameter REGISTER_RDATA bound to: 1 - type: integer 
+	Parameter REGISTER_WDATA bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_apb' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_apb/cmsdk_ahb_to_apb.v:31]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_apb' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:739]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_apb_slave_mux' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_apb/cmsdk_apb_slave_mux.v:26]
+	Parameter PORT0_ENABLE bound to: 1 - type: integer 
+	Parameter PORT1_ENABLE bound to: 0 - type: integer 
+	Parameter PORT2_ENABLE bound to: 0 - type: integer 
+	Parameter PORT3_ENABLE bound to: 0 - type: integer 
+	Parameter PORT4_ENABLE bound to: 0 - type: integer 
+	Parameter PORT5_ENABLE bound to: 0 - type: integer 
+	Parameter PORT6_ENABLE bound to: 0 - type: integer 
+	Parameter PORT7_ENABLE bound to: 0 - type: integer 
+	Parameter PORT8_ENABLE bound to: 0 - type: integer 
+	Parameter PORT9_ENABLE bound to: 0 - type: integer 
+	Parameter PORT10_ENABLE bound to: 0 - type: integer 
+	Parameter PORT11_ENABLE bound to: 0 - type: integer 
+	Parameter PORT12_ENABLE bound to: 0 - type: integer 
+	Parameter PORT13_ENABLE bound to: 0 - type: integer 
+	Parameter PORT14_ENABLE bound to: 0 - type: integer 
+	Parameter PORT15_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_apb_slave_mux' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_apb/cmsdk_apb_slave_mux.v:26]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_sram' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_ahb_to_sram.v:26]
+	Parameter AW bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_sram' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_ahb_to_sram.v:26]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:899]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_fpga_sram' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_fpga_sram.v:27]
+	Parameter AW bound to: 14 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/keil_prj/image.hex' is read successfully [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_fpga_sram.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_fpga_sram' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_fpga_sram.v:27]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (16) of module 'cmsdk_ahb_to_sram' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:945]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_apb_uart' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_apb_uart.v:53]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_apb_uart.v:260]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_apb_uart.v:271]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_apb_uart' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/cmsdk_apb_uart.v:53]
+WARNING: [Synth 8-7071] port 'TXEN' of module 'cmsdk_apb_uart' is unconnected for instance 'UART' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:980]
+WARNING: [Synth 8-7071] port 'BAUDTICK' of module 'cmsdk_apb_uart' is unconnected for instance 'UART' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:980]
+WARNING: [Synth 8-7023] instance 'UART' of module 'cmsdk_apb_uart' has 21 connections declared, but only 19 given [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:980]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_gpio' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_ahb_gpio.v:24]
+	Parameter ALTERNATE_FUNC_MASK bound to: 16'b1111111111111111 
+	Parameter ALTERNATE_FUNC_DEFAULT bound to: 16'b0000000000000000 
+	Parameter BE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_ahb_to_iop' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_ahb_to_iop.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_to_iop' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_ahb_to_iop.v:28]
+INFO: [Synth 8-6157] synthesizing module 'cmsdk_iop_gpio' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:46]
+	Parameter ALTERNATE_FUNC_MASK bound to: 16'b1111111111111111 
+	Parameter ALTERNATE_FUNC_DEFAULT bound to: 16'b0000000000000000 
+	Parameter BE bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:163]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:166]
+INFO: [Synth 8-226] default block is never used [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:192]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_iop_gpio' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'cmsdk_ahb_gpio' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_ahb_gpio.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'HADDR' does not match port width (12) of module 'cmsdk_ahb_gpio' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:1058]
+WARNING: [Synth 8-689] width (2) of port connection 'HRESP' does not match port width (1) of module 'cmsdk_ahb_gpio' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:1064]
+INFO: [Synth 8-6155] done synthesizing module 'ARM_SOC_TOP' (0#1) [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:3]
+WARNING: [Synth 8-3848] Net SCANOUTHCLK in module/entity L1AhbMtx does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L1AhbMtx/L1AhbMtx.v:446]
+WARNING: [Synth 8-6014] Unused sequential element data_in_port_reg was removed.  [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbOutStg.v:301]
+WARNING: [Synth 8-3848] Net SCANOUTHCLK in module/entity L2AhbMtx does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/bus/sys_ahb/L2AhbMtx/L2AhbMtx.v:190]
+WARNING: [Synth 8-3936] Found unconnected internal register 'IOWDATALE_reg' and it is trimmed from '32' to '16' bits. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/peripheral/GPIO/cmsdk_iop_gpio.v:232]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:21]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SynClock.sys_clk'. This will prevent further optimization [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:48]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ulogic'. This will prevent further optimization [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:160]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_L1AhbMtx'. This will prevent further optimization [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:403]
+WARNING: [Synth 8-3848] Net HRDATA_AHBL2P1 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:656]
+WARNING: [Synth 8-3848] Net HREADYOUT_AHBL2P1 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:654]
+WARNING: [Synth 8-3848] Net HRESP_AHBL2P1 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:657]
+WARNING: [Synth 8-3848] Net HRDATA_AHBL1P3 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:381]
+WARNING: [Synth 8-3848] Net HREADYOUT_AHBL1P3 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:383]
+WARNING: [Synth 8-3848] Net HRESP_AHBL1P3 in module/entity ARM_SOC_TOP does not have driver. [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:382]
+WARNING: [Synth 8-7129] Port IOWDATA[31] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[30] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[29] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[28] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[27] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[26] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[25] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[24] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[23] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[22] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[21] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[20] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[19] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[18] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[17] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOWDATA[16] in module cmsdk_iop_gpio is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HTRANS[0] in module cmsdk_ahb_to_iop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HSIZE[2] in module cmsdk_ahb_to_iop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[31] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[30] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[29] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[28] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[27] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[26] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[25] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[24] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[23] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[22] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[21] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PWDATA[20] in module cmsdk_apb_uart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HTRANS[0] in module cmsdk_ahb_to_sram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HSIZE[2] in module cmsdk_ahb_to_sram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PREADY1 in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[31] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[30] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[29] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[28] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[27] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[26] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[25] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[24] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[23] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[22] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[21] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[20] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[19] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[18] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[17] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[16] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[15] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[14] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[13] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[12] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[11] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[10] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[9] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[8] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[7] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[6] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[5] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[4] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[3] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[2] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[1] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA1[0] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PSLVERR1 in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PREADY2 in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[31] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[30] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[29] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[28] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[27] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[26] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[25] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[24] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[23] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[22] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[21] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[20] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[19] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[18] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[17] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[16] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[15] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[14] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[13] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[12] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[11] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[10] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[9] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[8] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[7] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[6] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[5] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[4] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[3] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[2] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[1] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRDATA2[0] in module cmsdk_apb_slave_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PSLVERR2 in module cmsdk_apb_slave_mux is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 2492.117 ; gain = 1617.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 2492.117 ; gain = 1617.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 2492.117 ; gain = 1617.578
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.998 . Memory (MB): peak = 2492.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/constrs_1/new/CMSDK_CortexM3.xdc]
+Finished Parsing XDC File [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/constrs_1/new/CMSDK_CortexM3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/constrs_1/new/CMSDK_CortexM3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ARM_SOC_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ARM_SOC_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2555.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.358 . Memory (MB): peak = 2555.777 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Learn/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7z020clg400-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_state_reg' in module 'cmsdk_ahb_to_ahb_sync_error_canc'
+INFO: [Synth 8-802] inferred FSM for state register 'reg_fsm_state_reg' in module 'cmsdk_ahb_to_ahb_sync'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'cmsdk_ahb_to_apb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             ST_GEN_IDLE |                              100 |                               01
+           ST_GEN_ERROR1 |                              010 |                               10
+           ST_GEN_ERROR2 |                              001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_state_reg' using encoding 'one-hot' in module 'cmsdk_ahb_to_ahb_sync_error_canc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                          0000001 |                             0100
+                FSM_ADDR |                          0000010 |                             0001
+                FSM_WAIT |                          0000100 |                             0010
+                FSM_ERR1 |                          0001000 |                             1000
+                FSM_ERR2 |                          0010000 |                             1100
+                FSM_DONE |                          0100000 |                             0110
+              FSM_UNLOCK |                          1000000 |                             0000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'reg_fsm_state_reg' using encoding 'one-hot' in module 'cmsdk_ahb_to_ahb_sync'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                          0001000 |                              000
+             ST_APB_WAIT |                          0000100 |                              001
+             ST_APB_TRNF |                          0000010 |                              010
+            ST_APB_TRNF2 |                          1000000 |                              011
+             ST_APB_ERR1 |                          0010000 |                              101
+             ST_APB_ERR2 |                          0000001 |                              110
+            ST_APB_ENDOK |                          0100000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'cmsdk_ahb_to_apb'
+WARNING: [Synth 8-6841] Block RAM (BRAM_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:03 ; elapsed = 00:05:13 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 11    
+	   2 Input   33 Bit       Adders := 6     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   3 Input   31 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
+	   3 Input    7 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 11    
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1256  
+	   3 Input      1 Bit         XORs := 2     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	               14 Bit    Registers := 5     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 32    
+	                3 Bit    Registers := 24    
+	                2 Bit    Registers := 21    
+	                1 Bit    Registers := 5753  
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 38    
+	   3 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 33    
+	   7 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 18    
+	   2 Input    4 Bit        Muxes := 46    
+	   5 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 11    
+	   7 Input    4 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 36    
+	   3 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 6     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 41    
+	   3 Input    2 Bit        Muxes := 4     
+	   6 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 7     
+	   5 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2242  
+	   4 Input    1 Bit        Muxes := 29    
+	   3 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Glym17, operation Mode is: A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: Generating DSP Glym17, operation Mode is: A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: Generating DSP Glym17, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+DSP Report: operator Glym17 is absorbed into DSP Glym17.
+RAM Pipeline Warning: Read Address Register Found For RAM ITCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ITCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (ITCM/BRAM_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM DTCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM DTCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6841] Block RAM (DTCM/BRAM_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+RAM Pipeline Warning: Read Address Register Found For RAM ITCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM DTCM/BRAM_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:20 ; elapsed = 00:08:39 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ARM_SOC_TOP | ITCM/BRAM_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
+|ARM_SOC_TOP | DTCM/BRAM_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm3ds_logic | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:35 ; elapsed = 00:08:54 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:08:37 ; elapsed = 00:08:56 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|ARM_SOC_TOP | ITCM/BRAM_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
+|ARM_SOC_TOP | DTCM/BRAM_reg | 16 K x 32(WRITE_FIRST) | W | R |                        |   |   | Port A           | 0      | 16     | 
++------------+---------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance ITCM/BRAM_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance DTCM/BRAM_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:08:51 ; elapsed = 00:09:11 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:01 ; elapsed = 00:09:21 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:01 ; elapsed = 00:09:22 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:02 ; elapsed = 00:09:22 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:02 ; elapsed = 00:09:22 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:04 ; elapsed = 00:09:24 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:04 ; elapsed = 00:09:25 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm3ds_logic | A*B          | 15     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm3ds_logic | PCIN>>17+A*B | 30     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_1         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |ila      |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |   296|
+|4     |DSP48E1  |     3|
+|5     |LUT1     |   267|
+|6     |LUT2     |  1307|
+|7     |LUT3     |  1408|
+|8     |LUT4     |  2795|
+|9     |LUT5     |  3634|
+|10    |LUT6     |  7926|
+|11    |MUXF7    |    31|
+|12    |RAMB36E1 |    32|
+|28    |FDCE     |  3458|
+|29    |FDPE     |    93|
+|30    |FDRE     |  2240|
+|31    |IBUF     |     4|
+|32    |IOBUF    |    17|
+|33    |OBUF     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:04 ; elapsed = 00:09:25 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 184 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:16 ; elapsed = 00:09:12 . Memory (MB): peak = 2555.777 ; gain = 1617.578
+Synthesis Optimization Complete : Time (s): cpu = 00:09:04 ; elapsed = 00:09:26 . Memory (MB): peak = 2555.777 ; gain = 1681.238
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.439 . Memory (MB): peak = 2555.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 379 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ARM_SOC_TOP' is not ideal for floorplanning, since the cellview 'cortexm3ds_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2555.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+
+Synth Design complete, checksum: ded774e6
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:18 ; elapsed = 00:09:41 . Memory (MB): peak = 2555.777 ; gain = 2077.313
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.runs/synth_1/ARM_SOC_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ARM_SOC_TOP_utilization_synth.rpt -pb ARM_SOC_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 16:07:36 2023...

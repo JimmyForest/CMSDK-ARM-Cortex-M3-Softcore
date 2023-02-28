@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_ARM_SOC_TOP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_ARM_SOC_TOP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="982.270000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,007.030001 us"></ZoomEndTime>
+      <Cursor1Time time="998.730000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="260"></NameColumnWidth>
+      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/tb_ARM_SOC_TOP/clk50M" type="logic">
+      <obj_property name="ElementShortName">clk50M</obj_property>
+      <obj_property name="ObjectShortName">clk50M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ARM_SOC_TOP/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ARM_SOC_TOP/TXD" type="logic">
+      <obj_property name="ElementShortName">TXD</obj_property>
+      <obj_property name="ObjectShortName">TXD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ARM_SOC_TOP/EXP" type="array">
+      <obj_property name="ElementShortName">EXP[15:0]</obj_property>
+      <obj_property name="ObjectShortName">EXP[15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

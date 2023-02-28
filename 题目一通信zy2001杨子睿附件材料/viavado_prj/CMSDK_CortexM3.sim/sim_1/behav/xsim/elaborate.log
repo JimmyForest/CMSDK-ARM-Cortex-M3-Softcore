@@ -1,0 +1,21 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Learn/Vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_ARM_SOC_TOP_behav xil_defaultlib.tb_ARM_SOC_TOP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:497]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:513]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM2' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:529]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM3' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:545]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM4' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:561]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERS0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:674]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM0' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:689]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'HMASTERM1' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:704]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:739]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:899]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'HADDR' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:945]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 12 for port 'HADDR' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:1058]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'HRESP' [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/rtl/ARM_SOC_TOP.v:1064]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

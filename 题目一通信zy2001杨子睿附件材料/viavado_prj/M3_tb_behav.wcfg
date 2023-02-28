@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="M3_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="M3_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="268.535 ns"></ZoomEndTime>
+      <Cursor1Time time="179.802 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/M3_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/key" type="logic">
+      <obj_property name="ElementShortName">key</obj_property>
+      <obj_property name="ObjectShortName">key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/led" type="array">
+      <obj_property name="ElementShortName">led[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/ADDR" type="array">
+      <obj_property name="ElementShortName">ADDR[13:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/WDATA" type="array">
+      <obj_property name="ElementShortName">WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/WREN" type="array">
+      <obj_property name="ElementShortName">WREN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">WREN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/CS" type="logic">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/RDATA" type="array">
+      <obj_property name="ElementShortName">RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/addr_q1" type="array">
+      <obj_property name="ElementShortName">addr_q1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_q1[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/write_enable" type="array">
+      <obj_property name="ElementShortName">write_enable[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_enable[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/cs_reg" type="logic">
+      <obj_property name="ElementShortName">cs_reg</obj_property>
+      <obj_property name="ObjectShortName">cs_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/read_data" type="array">
+      <obj_property name="ElementShortName">read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/AW" type="array">
+      <obj_property name="ElementShortName">AW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/M3_tb/u_SOC/ITCM/AWT" type="array">
+      <obj_property name="ElementShortName">AWT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AWT[31:0]</obj_property>
+   </wvobject>
+</wave_config>

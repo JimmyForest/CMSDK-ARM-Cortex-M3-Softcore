@@ -1,0 +1,66 @@
+
+*** Running vivado
+    with args -log ARM_SOC_TOP.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ARM_SOC_TOP.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source ARM_SOC_TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 414.840 ; gain = 73.598
+Command: link_design -top ARM_SOC_TOP -part xa7z020clg400-1I
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_1.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 939.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 495 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'ARM_SOC_TOP' is not ideal for floorplanning, since the cellview 'cortexm3ds_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: your_instance_name UUID: c43761e0-c036-5039-8c69-07a263a83e64 
+Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [c:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.gen/sources_1/ip/ila_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/constrs_1/new/CMSDK_CortexM3.xdc]
+Finished Parsing XDC File [C:/Users/forest/Desktop/VIVADO_Prj/CMSDK_CortexM3_1/viavado_prj/CMSDK_CortexM3.srcs/constrs_1/new/CMSDK_CortexM3.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1073.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 73 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 56 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 17 instances
+
+9 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1073.281 ; gain = 594.414
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xa7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xa7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1094.281 ; gain = 21.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1772af052
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1450.207 ; gain = 355.926
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.

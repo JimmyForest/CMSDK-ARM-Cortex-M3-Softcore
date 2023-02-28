@@ -1,0 +1,16 @@
+.\objects\cortexm3_driver.o: Core\CortexM3_driver.c
+.\objects\cortexm3_driver.o: Core\CortexM3_driver.h
+.\objects\cortexm3_driver.o: Core\CortexM3.h
+.\objects\cortexm3_driver.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\cortexm3_driver.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\cortexm3_driver.o: Core\core_cm3.h
+.\objects\cortexm3_driver.o: Core\CortexM3.h
+.\objects\cortexm3_driver.o: Core\core_cmInstr.h
+.\objects\cortexm3_driver.o: Core\core_cmFunc.h
+.\objects\cortexm3_driver.o: .\Peripheral\uart.h
+.\objects\cortexm3_driver.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\cortexm3_driver.o: .\Core\core_cm3.h
+.\objects\cortexm3_driver.o: .\Peripheral\gpio.h
+.\objects\cortexm3_driver.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\cortexm3_driver.o: .\Core\core_cm3.h
+.\objects\cortexm3_driver.o: D:\Learn\MDK\ARM\ARMCC\Bin\..\include\string.h
