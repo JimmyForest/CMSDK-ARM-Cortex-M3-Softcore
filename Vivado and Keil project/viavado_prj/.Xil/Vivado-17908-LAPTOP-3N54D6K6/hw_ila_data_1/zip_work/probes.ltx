@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <probeData version="2" minor="2">
   <probeset name="xc7z020_1" active="false">
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
         <Option Id="CORE_LOCATION" value="1:0"/>
@@ -9,6 +9,21 @@
         <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="clk50M_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_UUID" value="C43761E0C03650398C6907A263A83E64"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="PROBE_PORT" value="1"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
         <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
       </probeOptions>
@@ -31,21 +46,6 @@
         <net name="EXP_IBUF[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
-      <probeOptions Id="DebugProbeParams">
-        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
-        <Option Id="CORE_LOCATION" value="1:0"/>
-        <Option Id="CORE_UUID" value="C43761E0C03650398C6907A263A83E64"/>
-        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_1"/>
-        <Option Id="PROBE_PORT" value="1"/>
-        <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
-      </probeOptions>
-      <nets>
-        <net name="clk50M_IBUF"/>
-      </nets>
-    </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
@@ -55,25 +55,9 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="PROBE_PORT" value="2"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
       </probeOptions>
       <nets>
-        <net name="HADDRI[31]"/>
-        <net name="HADDRI[30]"/>
-        <net name="HADDRI[29]"/>
-        <net name="HADDRI[28]"/>
-        <net name="HADDRI[27]"/>
-        <net name="HADDRI[26]"/>
-        <net name="HADDRI[25]"/>
-        <net name="HADDRI[24]"/>
-        <net name="HADDRI[23]"/>
-        <net name="HADDRI[22]"/>
-        <net name="HADDRI[21]"/>
-        <net name="HADDRI[20]"/>
-        <net name="HADDRI[19]"/>
-        <net name="HADDRI[18]"/>
-        <net name="HADDRI[17]"/>
-        <net name="HADDRI[16]"/>
         <net name="HADDRI[15]"/>
         <net name="HADDRI[14]"/>
         <net name="HADDRI[13]"/>
@@ -101,25 +85,9 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="PROBE_PORT" value="3"/>
         <Option Id="PROBE_PORT_BITS" value="0"/>
-        <Option Id="PROBE_PORT_BIT_COUNT" value="32"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="16"/>
       </probeOptions>
       <nets>
-        <net name="HRDATAI[31]"/>
-        <net name="HRDATAI[30]"/>
-        <net name="HRDATAI[29]"/>
-        <net name="HRDATAI[28]"/>
-        <net name="HRDATAI[27]"/>
-        <net name="HRDATAI[26]"/>
-        <net name="HRDATAI[25]"/>
-        <net name="HRDATAI[24]"/>
-        <net name="HRDATAI[23]"/>
-        <net name="HRDATAI[22]"/>
-        <net name="HRDATAI[21]"/>
-        <net name="HRDATAI[20]"/>
-        <net name="HRDATAI[19]"/>
-        <net name="HRDATAI[18]"/>
-        <net name="HRDATAI[17]"/>
-        <net name="HRDATAI[16]"/>
         <net name="HRDATAI[15]"/>
         <net name="HRDATAI[14]"/>
         <net name="HRDATAI[13]"/>

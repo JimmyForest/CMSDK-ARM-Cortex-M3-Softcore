@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\CMSDK_CortexM3.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\CMSDK_CortexM3.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Feb 28 15:51:57 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Feb 28 16:33:23 2023
 <BR><P>
 <H3>Maximum Stack Usage =         72 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -130,8 +130,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_cm3ds.o(RESET)
 </UL>
 <P><STRONG><a name="[34]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_SendString
+<BR><BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_SendString
 </UL>
 
 <P><STRONG><a name="[12]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
@@ -175,14 +174,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_Byte
 <LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_String
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[21]"></a>GPIO_SetBits</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gpio.o(i.GPIO_SetBits))
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_Byte
 <LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_String
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOHandler
 </UL>
 
@@ -209,9 +206,9 @@ Global Symbols
 <P><STRONG><a name="[26]"></a>Master_SPI_WR_Byte</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, spi_gpio.o(i.Master_SPI_WR_Byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = Master_SPI_WR_Byte &rArr; delay_us &rArr; delay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 <LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_String
@@ -242,8 +239,8 @@ Global Symbols
 <P><STRONG><a name="[2b]"></a>SPI_Init</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, spi_gpio.o(i.SPI_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SPI_Init &rArr; GPIO_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Config
 <LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -329,8 +326,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOHandler
+<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOHandler
 </UL>
 
 <P><STRONG><a name="[28]"></a>delay_us</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, system.o(i.delay_us))
@@ -342,18 +338,14 @@ Global Symbols
 <LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 </UL>
 
-<P><STRONG><a name="[e]"></a>main</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, main.o(i.main))
+<P><STRONG><a name="[e]"></a>main</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = main &rArr; SystemInit &rArr; uart_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<BR>[Calls]<UL><LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 <LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Master_SPI_WR_String
 <LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
 <LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>

@@ -24,10 +24,10 @@ int main(void)
 
     while (1)
     {
-		LED_ON(LED1_GPIO_PORT, LED1_PIN);
-		delay_ms(200);
-		Master_SPI_WR_String(ReadBuffer, (uint8_t*)a, strlen(a));
-		LED_OFF(LED1_GPIO_PORT, LED1_PIN);
-		delay_ms(200);
+//		LED_ON(LED1_GPIO_PORT, LED1_PIN);
+//		delay_ms(200);
+		Master_SPI_WR_String(ReadBuffer, (uint8_t*)a, 40);
+//		LED_OFF(LED1_GPIO_PORT, LED1_PIN);
+//		delay_ms(200);
     }
 }

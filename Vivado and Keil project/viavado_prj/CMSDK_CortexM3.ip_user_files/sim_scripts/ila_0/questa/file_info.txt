@@ -1,5 +1,0 @@
-xpm_cdc.sv,systemverilog,xpm,D:/Learn/Vivado/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/hdl/verilog"
-xpm_memory.sv,systemverilog,xpm,D:/Learn/Vivado/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/hdl/verilog"
-xpm_VCOMP.vhd,vhdl,xpm,D:/Learn/Vivado/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/hdl/verilog"
-ila_0.v,verilog,xil_defaultlib,../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/sim/ila_0.v,incdir="../../../../CMSDK_CortexM3.gen/sources_1/ip/ila_0/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v
